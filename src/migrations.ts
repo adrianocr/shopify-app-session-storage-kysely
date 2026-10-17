@@ -1,4 +1,14 @@
-import type { Kysely, Migration } from "kysely";
+import type { Kysely } from "kysely";
+
+/**
+ * Structural copy of Kysely's `Migration` interface. Kysely 0.29 moved it from
+ * `kysely` to `kysely/migration`, so importing it from either path breaks the
+ * other supported version. This shape is accepted by both versions' `Migrator`.
+ */
+interface Migration {
+  up(db: Kysely<any>): Promise<void>;
+  down?(db: Kysely<any>): Promise<void>;
+}
 
 /**
  * Creates the `Session` table (and its shop/isOnline lookup index) using

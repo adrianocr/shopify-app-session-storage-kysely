@@ -20,6 +20,9 @@ Peer dependencies (you almost certainly already have these):
 npm install @shopify/shopify-api @shopify/shopify-app-session-storage kysely
 ```
 
+Requires `kysely` 0.28.17 or later. Earlier versions have known SQL injection
+advisories.
+
 ## 1. Create the `Session` table
 
 The package exports a standard Kysely [`Migration`](https://kysely.dev/docs/migrations).
@@ -30,7 +33,7 @@ tests).
 Run it through Kysely's own `Migrator` (recommended — versioned, tracked):
 
 ```ts
-import { Migrator } from "kysely";
+import { Migrator } from "kysely/migration"; // `from "kysely"` on Kysely 0.28
 import { migrations } from "shopify-app-session-storage-kysely";
 
 const migrator = new Migrator({
