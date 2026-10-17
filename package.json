@@ -52,17 +52,17 @@
   "peerDependencies": {
     "@shopify/shopify-api": ">=11",
     "@shopify/shopify-app-session-storage": ">=4",
-    "kysely": ">=0.27"
+    "kysely": ">=0.28.17"
   },
   "devDependencies": {
-    "@shopify/shopify-api": "^13.0.0",
-    "@shopify/shopify-app-session-storage": "^5.0.0",
-    "@testcontainers/postgresql": "^11.11.0",
-    "@types/pg": "^8.15.4",
-    "kysely": "^0.28.17",
-    "pg": "^8.16.3",
-    "tsup": "^8.5.0",
-    "typescript": "^5.9.2",
-    "vitest": "^3.2.4"
+    "@shopify/shopify-api": "^15.0.1",
+    "@shopify/shopify-app-session-storage": "^7.0.1",
+    "@testcontainers/postgresql": "^12.2.1",
+    "@types/pg": "^8.23.1",
+    "kysely": "^0.29.6",
+    "pg": "^8.23.1",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.5"
   }
 }
