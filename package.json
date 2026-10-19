@@ -1,6 +1,6 @@
 {
   "name": "shopify-app-session-storage-kysely",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Kysely-backed session storage adapter for Shopify apps, implementing @shopify/shopify-app-session-storage's SessionStorage interface.",
   "author": "Adriano Corte Real",
   "license": "MIT",
